@@ -405,7 +405,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onInfoWindowClick(Marker marker) {
         System.out.println("MARKER: "+ marker.getTitle());
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-        builder1.setMessage("You want to add this place as Favourite?");
+        builder1.setMessage("Add this Place to your favourites?");
         builder1.setCancelable(true);
         mMarker = marker;
         builder1.setPositiveButton(
@@ -417,7 +417,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
                         String addDate = simpleDateFormat.format(calendar.getTime());
                         if (isOk && mDatabase.addFavPlace(mMarker.getTitle(), addDate, mMarker.getSnippet(), mMarker.getPosition().latitude, mMarker.getPosition().longitude)) {
-                            Toast.makeText(MainActivity.this, "hi!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "OK", Toast.LENGTH_SHORT).show();
                             isOk = false;
 
                         }

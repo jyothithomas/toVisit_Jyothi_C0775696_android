@@ -266,7 +266,7 @@ public class DurationAndDistance extends AppCompatActivity implements OnMapReady
         StringBuilder googleDirectionUrl = new StringBuilder("https://maps.googleapis.com/maps/api/directions/json?");
         googleDirectionUrl.append("origin=" + lat + "," + longi);
         googleDirectionUrl.append("&destination=" + dest_lat + "," + dest_long);
-        googleDirectionUrl.append("&key=AIzaSyCA2OkQ-Um2T3wd624ikeMbhW37otDlykwE");
+        googleDirectionUrl.append("&key=AIzaSyCA2OkQ-Um2T3wd624ikeMbhW37otDlykw");
         Log.d("", "getDirectionUrl: " + googleDirectionUrl);
         System.out.println(googleDirectionUrl.toString());
         return googleDirectionUrl.toString();

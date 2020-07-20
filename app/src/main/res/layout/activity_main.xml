@@ -20,32 +20,35 @@
                 android:id="@+id/btn_clear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttton_default"
+                android:fontFamily="sans-serif-black"
                 android:onClick="btnClick"
                 android:text="Clear"
-                android:layout_marginRight="5dp"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
+
             <Button
                 android:id="@+id/btn_getlocatiomn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttton_default"
                 android:onClick="btnClick"
                 android:text="Current Location"
-                android:layout_marginRight="5dp"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
+
             <Button
                 android:id="@+id/btn_restaurants"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/buttton_default"
                 android:onClick="btnClick"
                 android:text="Restaurants"
-                android:layout_marginRight="5dp"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
 
             <Button
                 android:id="@+id/btn_museum"
@@ -55,7 +58,8 @@
                 android:background="@drawable/buttton_default"
                 android:onClick="btnClick"
                 android:text="Museums"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
+
             <Button
                 android:id="@+id/btn_library"
                 android:layout_width="wrap_content"
@@ -64,7 +68,8 @@
                 android:background="@drawable/buttton_default"
                 android:onClick="btnClick"
                 android:text="Library"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
+
             <Button
                 android:id="@+id/btn_school"
                 android:layout_width="wrap_content"
@@ -73,25 +78,27 @@
                 android:background="@drawable/buttton_default"
                 android:onClick="btnClick"
                 android:text="School"
-                android:textColor="#fff" />
+                android:textColor="#E91E63" />
 
-            <Button android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
                 android:id="@+id/btn_cafe"
-                android:background="@drawable/buttton_default"
-                android:layout_marginRight="5dp"
-                android:textColor="#fff"
-                android:text="Cafe"
-                android:onClick="btnClick" />
-
-            <Button android:layout_width="wrap_content"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btn_hospital"
-                android:background="@drawable/buttton_default"
                 android:layout_marginRight="5dp"
-                android:textColor="#fff"
+                android:background="@drawable/buttton_default"
+                android:onClick="btnClick"
+                android:text="Cafe"
+                android:textColor="#E91E63" />
+
+            <Button
+                android:id="@+id/btn_hospital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/buttton_default"
+                android:onClick="btnClick"
                 android:text="Hospital"
-                android:onClick="btnClick" />
+                android:textColor="#E91E63" />
 
 
         </LinearLayout>
@@ -119,6 +126,7 @@
             android:onClick="btnClick"
             android:src="@android:drawable/ic_menu_myplaces"
             android:text="Get Direction"
-            android:textColor="#fff" />
+            android:textColor="#E91E63"
+            android:tint="#E91E63" />
     </LinearLayout>
 </LinearLayout>

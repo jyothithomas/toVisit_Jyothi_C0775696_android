@@ -49,9 +49,9 @@ public class FavPlaces extends AppCompatActivity {
                 openItem.setBackground(new ColorDrawable(Color.rgb(0xC9, 0xC9,
                         0xCE)));
                 openItem.setWidth(300);
-                openItem.setTitle("Update Location");
+                openItem.setTitle("Update");
                 openItem.setTitleSize(18);
-                openItem.setTitleColor(Color.WHITE);
+                openItem.setTitleColor(Color.BLACK);
                 menu.addMenuItem(openItem);
                 SwipeMenuItem deleteItem = new SwipeMenuItem(
                         getApplicationContext());
@@ -83,9 +83,9 @@ public class FavPlaces extends AppCompatActivity {
                         break;
                     case 1:
                         // delete
-                        Toast.makeText(FavPlaces.this, "case 1"+places.get(position).id, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FavPlaces.this, ""+places.get(position).id, Toast.LENGTH_SHORT).show();
                         if(mDatabase.deletePlace(places.get(position).id)) {
-                            Toast.makeText(FavPlaces.this, "case 1", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(FavPlaces.this,"",Toast.LENGTH_SHORT).show();
                             places.remove(places.get(position));
                             swipeMenuListView.setAdapter(adapter);
                             loadPlaces();
